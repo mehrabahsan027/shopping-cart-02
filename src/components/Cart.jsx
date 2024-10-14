@@ -17,7 +17,7 @@ setCart(filter)
       <section className="flex flex-col gap-8   items-center divide-y divide-yellow-500 ">
        
         {
-          cart.length ==0 ? <h3 className="text-center text-3xl">Your Cart is Empty</h3> :  <h2 className="text-center text-3xl"></h2>
+          cart.length ==0 ? <h3 className="text-center text-3xl">Your Cart is Empty</h3> :  <h2 className="text-center text-3xl">Your Cart</h2>
         }
         {cart &&
           cart.length > 0 &&
