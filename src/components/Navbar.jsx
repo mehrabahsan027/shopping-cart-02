@@ -69,14 +69,14 @@ function Navbar() {
                 },
               }}
               onSubmit={handleSubmit}
-              className="form-control relative border border-yellow-600 w-full xl:w-8/12 "
+              className="form-control relative  w-full xl:w-8/12 "
             >
               <input
                 value={searchItems}
                 onChange={(e) => setSearchItems(e.target.value)}
                 type="text"
                 placeholder="Search"
-                className="input input-bordered w-full"
+                className="input input-bordered w-full border border-yellow-600 focus:outline-0"
               />
               <IoSearchSharp
                 onClick={handleSubmit}
@@ -95,9 +95,9 @@ function Navbar() {
                     duration: 0.5,
                   },
                 }}
-                className=" lg:ml-24 relative z-10 border py-1 lg:py-0 border-yellow-600 rounded-md"
+                className=" lg:ml-24 relative z-10  py-1 lg:py-0  rounded-md"
               >
-                <button className="btn btn-sm lg:btn-md">
+                <button className="btn btn-sm lg:btn-md border border-yellow-600">
                   <IoCartSharp className="text-2xl" />
                   <div className=" text-lg absolute -top-1 right-2 text-yellow-600 font-semibold">
                     {cart.length}
