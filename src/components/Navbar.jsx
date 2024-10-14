@@ -30,7 +30,7 @@ function Navbar() {
   }
   return (
     <>
-      <header className="sticky top-0 z-10 bg-black">
+      <header className="sticky top-0 z-10 bg-black shadow-md shadow-yellow-600">
         <section className="w-full xl:w-10/12 mx-auto">
           <div className="navbar gap-x-8 px-5 py-3">
             <Link to={"/"}>
@@ -59,7 +59,7 @@ function Navbar() {
 
             <motion.form
               initial={{
-                y: -70,
+                y: -100,
               }}
               animate={{
                 y: 0,
@@ -95,7 +95,7 @@ function Navbar() {
                     duration: 0.5,
                   },
                 }}
-                className=" lg:ml-24 relative z-10 border border-yellow-600 rounded-md"
+                className=" lg:ml-24 relative z-10 border py-1 lg:py-0 border-yellow-600 rounded-md"
               >
                 <button className="btn btn-sm lg:btn-md">
                   <IoCartSharp className="text-2xl" />
