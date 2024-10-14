@@ -4,8 +4,8 @@ import { useMyContext } from "../context/context";
 function Cart() {
   const { cart, setCart } = useMyContext();
 
-  const handleDelete = (id) => {
-    const filter = cart.filter((item) => item.id !== id);
+  const handleDelete = (proIndex) => {
+    const filter = cart.filter((item,index) => index !== proIndex);
 setCart(filter)
     
   };
@@ -21,7 +21,7 @@ setCart(filter)
         }
         {cart &&
           cart.length > 0 &&
-          cart.map((product) => {
+          cart.map((product,index) => {
             return (
               <div
                 key={product.id}
@@ -46,7 +46,7 @@ setCart(filter)
                     </button>
 
                     <button
-                      onClick={() => handleDelete(product.id)}
+                      onClick={() => handleDelete(index)}
                       className="btn btn-error btn-sm lg:btn-md"
                     >
                       Delete

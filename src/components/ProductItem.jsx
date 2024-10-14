@@ -53,8 +53,8 @@ function ProductItem({ item }) {
           <h2 className="card-title">{item.title}</h2>
           <p>{item.description}</p>
           <p className="text-xl">
-            {" "}
-            {item.price} <span className="text-2xl">$</span>{" "}
+            
+            {item.price} <span className="text-2xl">$</span>
           </p>
 
           <div className="flex justify-between gap-x-5 items-center">
